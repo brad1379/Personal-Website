@@ -1,5 +1,6 @@
 body {
     background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
 }
 header {
     background-color: #c5c5c5;
@@ -7,17 +8,27 @@ header {
     border-radius: 5px;
 }
 
-h1 {
+nav {
+    background-color: aquamarine;
     padding: 1em;
+    box-shadow: black;
+}
+
+h1 {
+    padding: 0.5em;
+    margin: 0;
 }
 
 h4 {
     text-align: center;
+    font-size: 24px;
 }
 
 #about, #projects {
     background-color: rgb(57, 57, 146);
     color: white;
+    text-align: center;
+    font-size: 24px;
 }
 
 div {
@@ -25,7 +36,7 @@ div {
     justify-content: center;
 }
 
-.proj1 {
+.proj1, .proj2 {
     border: 2px solid blueviolet;
     padding: 15px;
     margin: 20px;
@@ -33,27 +44,48 @@ div {
     justify-content: left;
     background-color: rgb(115, 115, 214);
     display: flexbox;
+    border-radius: 1em;
 }
- .proj2 {
-    border: 2px solid blueviolet;
-    padding: 15px;
-    margin: 20px;
-    width: 150px;
-    background-color: rgb(115, 115, 214);
-    display: flexbox;
- }
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: space-evenly;
+    gap: 3em;
+}
 
  li {
+    font: 1em sans-serif;
     display: inline-block;
     justify-content: space-between;
-    margin: 5px;
+    margin: 2em;
     padding: 1.5em;
     background-color: rgb(115, 115, 214);
     border-radius: 5px;
+    width: 5em;
+    text-align: center;
+    vertical-align: middle;
+    align-content: center;
+    height: 2em;
  }
 
  img {
-    max-width: 10em;
-    padding: 10px;
-    align-items: center;
+    max-width: 100%;
+    display: block;
  }
+
+ .projects {
+    display: flex;
+    flex: 2;
+    gap: 5em;
+ }
+
+ a {
+    padding-top: 10px;
+    text-align: center;
+ }
+
+ .projects p {
+    text-align: center;
+ }
+
