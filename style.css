@@ -1,50 +1,51 @@
 body {
-    background-color: aliceblue;
+    background-color: #829cbc;
     font-family: 'Courier New', Courier, monospace;
 }
 header {
-    background-color: #c5c5c5;
     text-align: center;
     border-radius: 5px;
 }
 
 nav {
-    background-color: aquamarine;
     padding: 1em;
-    box-shadow: black;
 }
 
 h1 {
-    padding: 0.5em;
+    padding-top: 0.5em;
     margin: 0;
+    color: rgb(240, 240, 240);
 }
 
 h4 {
     text-align: center;
     font-size: 24px;
+    color: rgb(240, 240, 240);
+    background-color: #1D3461;
+    border-radius: 5px;
 }
 
 #about, #projects {
-    background-color: rgb(57, 57, 146);
-    color: white;
+    background-color: #1D3461;
+    color: rgb(240, 240, 240);
     text-align: center;
     font-size: 24px;
+    border-radius: 5px;
 }
 
-div {
+
+.proj {
     display: grid;
-    justify-content: center;
-}
-
-.proj1, .proj2 {
-    border: 2px solid blueviolet;
+    justify-content: space-between;
+    border: 1px solid #6c7179;
     padding: 15px;
     margin: 20px;
     width: 150px;
-    justify-content: left;
-    background-color: rgb(115, 115, 214);
+    justify-content: center;
+    background-color: #6290C8;
     display: flexbox;
     border-radius: 1em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 ul {
@@ -56,17 +57,17 @@ ul {
 
  li {
     font: 1em sans-serif;
-    display: inline-block;
-    justify-content: space-between;
-    margin: 2em;
-    padding: 1.5em;
-    background-color: rgb(115, 115, 214);
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #376996;
     border-radius: 5px;
-    width: 5em;
-    text-align: center;
-    vertical-align: middle;
-    align-content: center;
-    height: 2em;
+    align-items: center;
+    height: 4em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
  }
 
  img {
@@ -77,15 +78,23 @@ ul {
  .projects {
     display: flex;
     flex: 2;
-    gap: 5em;
+    gap: 1em;
  }
 
  a {
     padding-top: 10px;
     text-align: center;
+    text-decoration: none;
  }
 
  .projects p {
     text-align: center;
  }
+ 
+ section {
+    padding-right: 2em;
+ }
 
+ .proj:hover {
+    transform: scale(1.05);
+ }
