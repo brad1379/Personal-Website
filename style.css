@@ -11,6 +11,7 @@ nav {
 }
 
 h1 {
+    font-size: 48px;
     padding-top: 0.5em;
     margin: 0;
     color: rgb(240, 240, 240);
@@ -23,13 +24,14 @@ h1 {
     font-size: 24px;
     border-radius: 5px;
     padding: 4px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 
 .proj {
     display: grid;
     justify-content: space-between;
-    border: 1px solid #6c7179;
+    border: 1px solid #838a95;
     padding: 25px;
     margin: 20px;
     width: 150px;
@@ -74,7 +76,7 @@ ul {
     gap: 1em;
  }
 
- a {
+ .proj-link {
     padding-top: 20px;
     text-align: center;
     text-decoration: none;
@@ -98,3 +100,29 @@ ul {
     text-align: justify;
     padding: 5px;
  }
+
+ .links {
+     display: inline-flex;
+     align-items: center;
+     height: auto;
+     gap: 20px;
+ }
+
+ #github-div:hover, #linkedin-div:hover {
+    transform: scale(1.1);
+ }
+
+.links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.links img {
+    display: inline-flex;
+    max-width: 30px;
+    margin-bottom: 10px;
+    /* margin-right: 8px; */
+    vertical-align: middle;
+}
